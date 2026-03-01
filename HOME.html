@@ -1,0 +1,166 @@
+<DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style >
+			body{
+				margin:0%;
+			}
+		#navigation{
+			margin-top:0%;
+			font-size: ;
+		transition: font-size 4s; 
+		}
+#navigation: hover{
+transform: scale(1.4);
+}
+#footer{
+	margin: 0px;
+padding:0%;
+	height: 50px;
+	background-color: blue;
+}
+
+		</style>
+	</head>
+	<body>
+		<div style="float: center;text-align: center;background-color: blue;height: 200px;color: white;">
+		<h1>LOUF-HEALTH CARE</h1>
+		<p> CANDY BODY SWEET LIFE</p>
+		<br><br>
+		<div id="navigation">
+		<a href="Home.html"style="color: white;font-size: 20px;text-decoration: none;"> Home</a> 	
+		<a href="Testyourself.html"style="color: white;font-size: 20px;padding-left: 30px;text-decoration: none;">	Test your self</a>
+	<a href="Aboutdesease.html"style="color: white;padding-left: 30px;text-decoration: none;font-size: 20px">	About a deases</a>
+	<a href="Aboutlife.html"style="color: white;padding-left: 30px;text-decoration: none;font-size: 20px">	About a life</a>
+		</div>
+		</div>
+	<h1>WELCOME</h1>
+	
+	
+	<br><br><br><br><br><br>
+	<div class="search-box"style="justify-content: center;justify-items: center;">
+            <input type="text" id="diseaseInput" placeholder="Enter disease (e.g., Fever, Cold)"style="float: center;width: 700px;height: 70px;">
+            <button onclick="searchDisease()"style="float: center;width: 90px;height: 70px;">Search</button>
+        </div>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // JavaScript for functionality and conditions [8]
+        function searchDisease() {
+            let input = document.getElementById('diseaseInput').value.toLowerCase();
+            let resultDiv = document.getElementById('result');
+            let medicine = "";
+            let effect = "";
+
+            // If conditions to map diseases [8]
+            if (input === "fever") {
+                medicine = "Paracetamol";
+                effect = "Reduces temperature and pain";
+            } else if (input === "cold") {
+                medicine = "Cetirizine";
+                effect = "Relieves sneezing and runny nose";
+            } else if (input === "headache") {
+                medicine = "Ibuprofen";
+                effect = "Reduces pain and inflammation";
+            } 
+            else if (input === "malaria") {
+                medicine = "Qualiteme";
+                effect = "it couses death";
+            } 
+            else {
+                medicine = "Not Found";
+                effect = "Please consult a doctor";
+            }
+
+            // Display results
+            resultDiv.style.display = "block";
+            resultDiv.style.backgroundColor = (medicine === "Not Found") ? "#ffcccc" : "#e2f8e2";
+            resultDiv.innerHTML = `Disease: ${input.toUpperCase()}<br>Medicine: ${medicine}<br>Effect: ${effect}`;
+        }
+    </script>
+    <div id="mararia"style="display: none;">
+    	Malaria is a life-threatening, but preventable and curable, disease caused by parasites of the genus Plasmodium. It is primarily transmitted to humans through the bites of infected female Anopheles mosquitoes.
++1
+
+🦟 Transmission and Causes
+The disease is caused by five parasite species that infect humans:
+
+P. falciparum: The deadliest and most prevalent, particularly in Africa.
+
+P. vivax: The dominant species outside of sub-Saharan Africa; it can lie dormant in the liver and cause relapses months or years later.
+
+P. ovale & P. malariae: Less common, with P. ovale also capable of liver dormancy.
+
+P. knowlesi: Primarily found in Southeast Asia, it spreads from monkeys to humans (zoonotic).
+
+The Transmission Cycle:
+
+The Bite: An infected mosquito injects sporozoites into the bloodstream.
+
+Liver Stage: Parasites travel to the liver, where they multiply.
+
+Blood Stage: They enter red blood cells, multiply again, and cause the cells to burst. This stage is when symptoms occur.
++1
+
+Next Host: A new mosquito bites the infected person, ingesting the parasite and continuing the cycle.
+
+🤒 Symptoms
+Symptoms typically appear 10–15 days after the bite.
+
+Common (Mild) Symptoms
+Fever and shivering chills (the "malaria attack" often occurs in cycles).
+
+Headache, muscle aches, and fatigue.
+
+Nausea, vomiting, and diarrhea.
+
+Severe Symptoms (Medical Emergency)
+Cerebral Malaria: Confusion, seizures, or coma caused by parasites blocking blood vessels to the brain.
+
+Respiratory Distress: Difficulty breathing due to fluid in the lungs or metabolic issues.
+
+Organ Failure: Kidney failure, liver damage, or a ruptured spleen.
+
+Severe Anemia: Massive destruction of red blood cells.
+
+🛡️ Prevention and Protection
+Prevention focuses on "Vector Control" (avoiding mosquitoes) and "Chemoprophylaxis" (preventive medicine).
+
+Insecticide-Treated Nets (ITNs): Sleeping under bed nets is the most effective way to prevent bites.
+
+Indoor Residual Spraying (IRS): Spraying the walls of homes with insecticide.
+
+Repellents & Clothing: Using DEET-based repellents and wearing long sleeves/pants after dusk.
+
+Vaccines: As of 2026, two major vaccines—RTS,S (Mosquirix) and R21/Matrix-M—are being rolled out across Africa, significantly reducing severe malaria in children.
+
+💊 Treatment and Diagnosis
+Diagnosis is performed via a rapid diagnostic test (RDT) or by examining a blood smear under a microscope.
+
+ACTs (Artemisinin-based Combination Therapies): The gold standard for treating uncomplicated P. falciparum malaria.
+
+Emergency Care: Severe malaria requires intravenous (IV) medication and hospital monitoring.
+
+Resistance: A growing concern in 2026 is the increasing resistance of parasites to artemisinin in Southeast Asia and parts of Africa.
+
+📊 Global Impact (2024-2026 Trends)
+Cases: In 2024, there were an estimated 282 million cases and 610,000 deaths.
+
+Demographics: Children under 5 remain the most vulnerable, accounting for roughly 75% of all malaria deaths in the African Region.
+
+Geography: The WHO African Region carries a disproportionate burden, accounting for about 95% of all cases and deaths globally.
+
+[!IMPORTANT]
+If you have recently traveled to a tropical region and develop a fever, seek medical attention immediately. Malaria can progress from "flu-like" to fatal within 24 hours if untreated.
+    </div>
+<div id="foooter">
+	<p>copy &COPY and rights reserved 2025</p>
+</div>
+	</body>
+	</html>

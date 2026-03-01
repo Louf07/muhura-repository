@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <style >
+            body{
+                margin:0%;
+            }
+        #navigation{
+            margin-top:0%;
+            font-size: ;
+        transition: font-size 4s; 
+        }
+#navigation: hover{
+transform: scale(1.4);
+}
+#footer{
+    margin: 0px;
+padding:0%;
+    height: 50px;
+    background-color: blue;
+}
+
+        </style>
+    </head>
+    <body>
+        <div style="float: center;text-align: center;background-color: blue;height: 200px;color: white;">
+        <h1>LOUF-HEALTH CARE</h1>
+        <p> CANDY BODY SWEET LIFE</p>
+        <br><br>
+        <div id="navigation">
+        <a href="Home.html"style="color: white;font-size: 20px;text-decoration: none;"> Home</a>    
+        <a href="Testyourself.html"style="color: white;font-size: 20px;padding-left: 30px;text-decoration: none;">  Test your self</a>
+    <a href="Aboutdesease.html"style="color: white;padding-left: 30px;text-decoration: none;font-size: 20px">   About a deases</a>
+    <a href="Aboutlife.html"style="color: white;padding-left: 30px;text-decoration: none;font-size: 20px">  About a life</a>
+        </div>
+        </div>
+<p>This site is the best to everyone you enter the desease and get medecine you need</p>
+ <input type="search" id="search"placeholder="ENTER THE DEASES"style="width: 700px;border-radius:10px;height:50px">\
+ <button id="getsearch"style="width:100px"height:10px>GET READY FOR OUTPUT</button>
+ <div id="malaria"style="display: none;"> malaria</div>
+ <div id="smalaria2"style="display: none;">malaria2</div>
+  <div id="smalaria3"style="display: none;"> malaria3</div>
+   <script>
+   
+    document.getElementById("getsearch").addEventListener("click",
+        function(){
+             let search=document.getElementById("search").value;
+             
+            if(search === "malaria"){
+                document.getElementById("malaria").style.display="block";
+            }else if(search ==="malaria2"){
+                document.getElementById("smalaria2").style.display="block";
+            }else if(search==="obed"){
+                 document.getElementById("search").value="error".style.color="red";
+
+            }
+            else{
+                document.getElementById("smalaria3").style.display="block";
+            }
+        })
+</script>
+ 	  <br><br>
+ 	  <p>If you dont know the deases you can enter symptoms and get deases</p>
+ 	  <input type="text" id="desease2"placeholder="enter the deaseases">
+       <button id="Test2">CHECK</button>
+          <p id="showtest2"></p>
+        
+          <br><Br>
+          <p>If you need prevention about about the deases enter deases and get prevention</p>
+          <input type="text" id="desease3"placeholder="enter the deaseases">
+      <button id="Test3">Prevention</button>
+     <p id="showtest3"></p>
+    
+     </script><br><br>
+     <p>More intergrated with entering deases ang their effect</p>
+     <input type="text" id="desease4"placeholder="enter the deaseases">
+  <button id="Test4">See effect</button>
+    <p id="showtest4"></p>
+   
+    </script>
+
+
+
+
+
+</body>
+</html>
